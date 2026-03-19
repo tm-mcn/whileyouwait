@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>whileyouwait — coming soon</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,600;0,700;0,900;1,400&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --cyan: #00DDFF;
+      --black: #0a0a0a;
+      --white: #ffffff;
+      --gray: #888888;
+    }
+
+    html, body {
+      height: 100%;
+      background: var(--white);
+      color: var(--black);
+      font-family: 'Barlow', sans-serif;
+      overflow-x: hidden;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /* ── MAIN ── */
+    main {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      padding: 80px 7vw;
+      position: relative;
+    }
+
+    .content {
+      max-width: 900px;
+      opacity: 0;
+      transform: translateY(24px);
+      animation: fadeUp 0.8s cubic-bezier(0.22, 1, 0.36, 1) 0.1s forwards;
+    }
+
+    h1 {
+      font-size: clamp(2.4rem, 6vw, 5.2rem);
+      font-weight: 900;
+      line-height: 1.05;
+      letter-spacing: -0.02em;
+      margin-bottom: 2.4rem;
+    }
+
+    .body-text {
+      font-size: clamp(1rem, 1.8vw, 1.25rem);
+      font-weight: 400;
+      line-height: 1.65;
+      color: #222;
+    }
+
+    .body-text strong {
+      font-weight: 700;
+    }
+
+    .hang-tight {
+      display: inline-block;
+      margin-top: 2.8rem;
+      font-size: clamp(1rem, 1.6vw, 1.2rem);
+      font-weight: 700;
+      letter-spacing: 0.01em;
+    }
+
+    /* ── BRAND LOCKUP ── */
+    .brand-lockup {
+      position: absolute;
+      bottom: 80px;
+      right: 7vw;
+      text-align: right;
+      opacity: 0;
+      transform: translateY(16px);
+      animation: fadeUp 0.8s cubic-bezier(0.22, 1, 0.36, 1) 0.4s forwards;
+    }
+
+    .brand-name {
+      display: block;
+      font-size: clamp(1.4rem, 3vw, 2.4rem);
+      font-weight: 900;
+      color: var(--cyan);
+      letter-spacing: -0.02em;
+      line-height: 1;
+    }
+
+    .coming-soon {
+      display: block;
+      font-size: clamp(1.2rem, 2.4vw, 2rem);
+      font-weight: 700;
+      color: var(--black);
+      letter-spacing: -0.01em;
+      line-height: 1.2;
+    }
+
+    .coming-soon-dot {
+      color: var(--cyan);
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      padding: 24px 7vw;
+      text-align: center;
+      font-size: 0.78rem;
+      color: var(--gray);
+      line-height: 1.8;
+      opacity: 0;
+      animation: fadeUp 0.6s ease 0.7s forwards;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 6px;
+    }
+
+    .social-icons a {
+      color: var(--gray);
+      transition: color 0.2s;
+      display: flex;
+      align-items: center;
+    }
+
+    .social-icons a:hover {
+      color: var(--cyan);
+    }
+
+    .social-icons svg {
+      width: 18px;
+      height: 18px;
+      fill: currentColor;
+    }
+
+    /* ── ANIMATION ── */
+    @keyframes fadeUp {
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 640px) {
+      main { padding: 60px 6vw; align-items: flex-start; padding-top: 30vh; }
+      .brand-lockup { position: static; text-align: left; margin-top: 3rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <main>
+    <div class="content">
+      <h1>good things come to those who don't wait.</h1>
+      <p class="body-text">
+        the average person spends<br>
+        four and a half years of their life standing in queues.<br>
+        we think that's <strong>silly</strong>.<br>
+        so we built something better.
+      </p>
+      <span class="hang-tight">hang tight</span>
+    </div>
+
+    <div class="brand-lockup">
+      <span class="brand-name">whileyouwait</span>
+      <span class="coming-soon">coming soon<span class="coming-soon-dot">.</span></span>
+    </div>
+  </main>
+
+  <footer>
+    <div>built for the impatient. © whileyouwait 2026</div>
+    <div class="social-icons">
+      <!-- Instagram -->
+      <a href="https://www.instagram.com/whileyouwait.io?igsh=bW0xNXQza3UyeWl6" aria-label="Instagram" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+        </svg>
+      </a>
+    </div>
+  </footer>
+
+</body>
+</html>
