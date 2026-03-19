@@ -67,13 +67,13 @@
 
     .brand-lockup {
       margin-top: 2rem;
-      margin-bottom: 1rem;
-      padding-bottom: 1rem;
+      margin-bottom: 0;
+      padding-bottom: 0;
     }
 
     .brand-name {
       display: block;
-      font-size: clamp(1.4rem, 2.5vw, 2.2rem);
+      font-size: clamp(1.61rem, 2.875vw, 2.53rem);
       font-weight: 900;
       color: var(--cyan);
       letter-spacing: -0.02em;
@@ -82,7 +82,7 @@
 
     .coming-soon {
       display: block;
-      font-size: clamp(1.1rem, 2vw, 1.8rem);
+      font-size: clamp(1.265rem, 2.3vw, 2.07rem);
       font-weight: 700;
       color: var(--black);
       letter-spacing: -0.01em;
@@ -93,7 +93,7 @@
 
     .insta-link {
       display: block;
-      margin-top: 10px;
+      margin-top: 18px;
       color: var(--gray);
       transition: color 0.2s;
       text-align: center;
@@ -221,7 +221,8 @@
     /* ── MOBILE ── */
     @media (max-width: 640px) {
       body { padding-top: 0; min-height: unset; height: auto; }
-      main { flex: none; }
+      main { flex: none; padding-bottom: 0 !important; }
+      footer { padding-top: 4px !important; }
 
       main {
         grid-template-columns: 1fr;
@@ -290,11 +291,11 @@
         margin-top: 20px;
       }
 
-      .brand-name   { font-size: 1.5rem; }
+      .brand-name   { font-size: 1.725rem; }
       .brand-lockup { text-align: center; }
-      .coming-soon  { font-size: 1.3rem; }
+      .coming-soon  { font-size: 1.495rem; }
       .body-text    { font-size: 1.6rem; }
-      .hang-tight   { font-size: 1.6rem; margin-top: 1.6rem; }
+      .hang-tight   { font-size: 1.6rem; margin-top: 0.6rem; }
     }
   </style>
 </head>
@@ -315,7 +316,9 @@
     <div class="content">
       <p class="body-text">
         the average person spends<br>
-        four and a half years.<br>
+        four and a half years<br>
+        of their life standing in queues.<br>
+        <br>
         we think that's <strong>silly</strong>.<br>
         so we built something better.
       </p>
