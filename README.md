@@ -15,7 +15,7 @@ Then open `http://localhost:8000/`.
 - `index.html` contains the page markup, styles, analytics tag, and marquee behavior.
 - `assets/wyw-logo.png` is the logo used in the page lockup.
 - `assets/linkedin-icon.png` is used as the LinkedIn icon mask.
-- `favicon.svg` is the browser icon.
+- `favicon.png` is the browser icon.
 - `og-image.jpg` is the social sharing image referenced by Open Graph and Twitter/X tags.
 
 ## Notes
