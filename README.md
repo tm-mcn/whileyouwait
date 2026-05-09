@@ -16,7 +16,7 @@ Then open `http://localhost:8000/`.
 - `assets/wyw-logo.png` is the logo used in the page lockup.
 - `assets/linkedin-icon.png` is used as the LinkedIn icon mask.
 - `favicon.png` is the browser icon.
-- `og-image.jpg` is the social sharing image referenced by Open Graph and Twitter/X tags.
+- `og-image.png` is the social sharing image referenced by Open Graph and Twitter/X tags.
 
 ## Notes
 
